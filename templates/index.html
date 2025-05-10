@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1>🌤️ Weather Forecast</h1>
+        <form id="weather-form">
+            <input type="text" id="city" name="city" placeholder="Enter city name" required />
+            <label for="weather-type">Select Weather Type: </label>
+            <select id="weather-type" name="type">
+                <option value="current">Current Weather</option>
+                <option value="forecast">3-Day Forecast</option>
+                <option value="history">Past Weather</option>
+            </select>
+            <button type="submit">Find Weather</button>
+        </form>
+        <p>or click on the map below 👇</p>
+
+        <div id="map"></div>
+
+        <div id="weather-result"></div>
+        <div id="share-link"></div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Custom JS -->
+    
+
+    <script src="/static/script.js"></script>
+
+
+
+</body>
+</html>
